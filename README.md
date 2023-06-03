@@ -13,7 +13,6 @@
 
 This is a form for assessment purposes.  
 Visit here: [https://fedex-form.web.app/](https://fedex-form.web.app/).  
-You can submit a user to `https://demo-api.now.sh/users`.
 
 
 ## Development
@@ -41,7 +40,6 @@ You can submit a user to `https://demo-api.now.sh/users`.
 1. Push to `develop`
 1. [GH action](https://github.com/iceicerickert/fedex-form/actions/workflows/firebase-hosting-merge.yml) will deploy to Firebase
 
-
 ## Choices
 
 - All english of course
@@ -63,6 +61,7 @@ You can submit a user to `https://demo-api.now.sh/users`.
 - precommit lint
 - firebase hosting for serving
 - github action for deploying
+- add lighthouse report after build
 
 ## TODO / improvements
 - Revalidate password control on change of firstName or lastName value
