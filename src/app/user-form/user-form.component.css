@@ -1,0 +1,51 @@
+div.container {
+  max-width: 700px;
+}
+
+
+.ng-valid[required], .ng-valid.required  {
+  border-left: 5px solid #42A948;
+}
+
+.ng-invalid:not(form)  {
+  border-left: 5px solid #a94442;
+}
+
+div.api-error {
+  margin-top: 20px;
+}
+
+.center-screen {
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.svg-calLoader {
+  width: 250px; height: 250px;
+ transform-origin: 115px 115px;
+ animation: 1.4s linear infinite loader-spin;
+}
+
+.cal-loader__plane { fill: #4D148C; }
+.cal-loader__path { stroke: #FF6600; animation: 1.4s ease-in-out infinite loader-path; }
+
+@keyframes loader-spin {
+ to{
+   transform: rotate(360deg);
+ }
+}
+@keyframes loader-path {
+ 0%{
+   stroke-dasharray:  0, 580, 0, 0, 0, 0, 0, 0, 0;
+ }
+ 50%{
+   stroke-dasharray: 0, 450, 10, 30, 10, 30, 10, 30, 10;
+ }
+ 100%{
+   stroke-dasharray: 0, 580, 0, 0, 0, 0, 0, 0, 0;
+ }
+}
