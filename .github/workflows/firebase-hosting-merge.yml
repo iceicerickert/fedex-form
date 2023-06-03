@@ -18,3 +18,18 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_FEDEX_FORM }}'
           channelId: live
           projectId: fedex-form
+  lighthouse-check:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - run: mkdir /tmp/artifacts
+    - name: Run Lighthouse
+      uses: foo-software/lighthouse-check-action@master
+      with:
+        outputDirectory: /tmp/artifacts
+        urls: 'https://fedex-form.web.app/'
+    - name: Upload artifacts
+      uses: actions/upload-artifact@master
+      with:
+        name: Lighthouse reports
+        path: /tmp/artifacts

@@ -1,6 +1,18 @@
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
+![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase)
+![Google Chrome](https://img.shields.io/badge/Google%20Chrome-4285F4?style=for-the-badge&logo=GoogleChrome&logoColor=white)
+![Safari](https://img.shields.io/badge/Safari-000000?style=for-the-badge&logo=Safari&logoColor=white)
+![Firefox](https://img.shields.io/badge/Firefox-FF7139?style=for-the-badge&logo=Firefox-Browser&logoColor=white)
+
 # fedex-form
 
-This is a form for assessment purposes.
+This is a form for assessment purposes.  
+Visit here: [https://fedex-form.web.app/](https://fedex-form.web.app/).  
 You can submit a user to `https://demo-api.now.sh/users`.
 
 
@@ -26,7 +38,8 @@ You can submit a user to `https://demo-api.now.sh/users`.
 
 ## Deploy
 
-1. todo
+1. Push to `develop`
+1. [GH action](https://github.com/iceicerickert/fedex-form/actions/workflows/firebase-hosting-merge.yml) will deploy to Firebase
 
 
 ## Choices
@@ -48,7 +61,8 @@ You can submit a user to `https://demo-api.now.sh/users`.
 - responsive design
 - default stuff: blocking submit on request, some visual (spinner), resetting form, error handling etc
 - precommit lint
-
+- firebase hosting for serving
+- github action for deploying
 
 ## TODO / improvements
 - Revalidate password control on change of firstName or lastName value
@@ -57,7 +71,6 @@ You can submit a user to `https://demo-api.now.sh/users`.
 - protractor???
 - lighthouse
 - sonarqube
-- github
 - update readme for tests (choices)
 - update readme for deployment (choices)
 - update readme for improvements
