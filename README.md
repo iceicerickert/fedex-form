@@ -71,8 +71,6 @@ Visit here: [https://fedex-form.web.app/](https://fedex-form.web.app/).
 - Make it look nicer
 
 - protractor???
-- sonarqube
 - update readme for tests (choices)
-- update readme for deployment (choices)
 - update readme for improvements
 - check code 1 more time 
