@@ -12,7 +12,7 @@ export class UserService {
     return this.submittedUser;
   }
 
-  async submitUser(firstName: string, lastName: string, email: string, surnamePreposition?: String): Promise<void> {
+  async submitUser(firstName: string, lastName: string, email: string, surnamePreposition?: string): Promise<void> {
     if (surnamePreposition) {
       lastName = surnamePreposition + ' ' + lastName;
     }

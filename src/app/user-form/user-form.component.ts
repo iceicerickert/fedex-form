@@ -12,7 +12,7 @@ import { FormGroup } from '@angular/forms';
 
 export class UserFormComponent {
 
-  @ViewChild('userForm') form: any;
+  @ViewChild('userForm') form !: FormGroup;
 
   model = {} as User;
   userService: UserService = inject(UserService);
@@ -22,7 +22,7 @@ export class UserFormComponent {
   apiError = false;
 
   public markAllAsTouched(formGroup: FormGroup): void {
-    (Object as any).values(formGroup.controls).forEach((control: any) => {
+    (Object as any).values(formGroup.controls).forEach((control: any) => { // eslint-disable-line @typescript-eslint/no-explicit-any
       control.markAsTouched();
       if (control.controls) {
         this.markAllAsTouched(control);

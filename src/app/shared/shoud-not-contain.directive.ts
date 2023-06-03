@@ -4,13 +4,13 @@ import { Directive, Input } from '@angular/core';
 export function shouldNotContainValidator(nameRe: RegExp): ValidatorFn {
   return (control: AbstractControl): ValidationErrors | null => {
     const shouldNotContain = nameRe.test(control.value);
-    return shouldNotContain ? {shouldNotContain: {value: control.value}} : null;
+    return shouldNotContain ? {appShouldNotContain: {value: control.value}} : null;
   };
 }
 
 
 @Directive({
-  selector: '[shouldNotContain]',
+  selector: '[appShouldNotContain]',
   providers: [
     {
       provide: NG_VALIDATORS,
@@ -22,7 +22,7 @@ export function shouldNotContainValidator(nameRe: RegExp): ValidatorFn {
 
 export class ShouldNotContainValidatorDirective implements Validator {
 
-  @Input('shouldNotContain') shouldNotContain !: string[];
+  @Input('appShouldNotContain') shouldNotContain !: string[];
 
   validate(control: AbstractControl): ValidationErrors | null {
     let validationError: ValidationErrors | null = null;

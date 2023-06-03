@@ -68,7 +68,7 @@
           required
           minlength="8"
           pattern="^(?=.*[A-Z])(?=.*[a-z]).*$"
-          [shouldNotContain]="[model.firstName, model.lastName]"
+          [appShouldNotContain]="[model.firstName, model.lastName]"
           [(ngModel)]="model.password" name="password"
           #password="ngModel"
         >
@@ -83,7 +83,7 @@
           <div *ngIf="password.errors?.['pattern']">
             Password should contain at least 1 uppercase and 1 lowercase character
           </div>
-          <div *ngIf="password.errors?.['shouldNotContain']">
+          <div *ngIf="password.errors?.['appShouldNotContain']">
             Password should not contain the first name nor last name
           </div>
           <div *ngIf="password.errors?.['email']">
