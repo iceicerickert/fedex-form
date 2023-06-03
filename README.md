@@ -66,11 +66,18 @@ Visit here: [https://fedex-form.web.app/](https://fedex-form.web.app/).
 - github action for deploying
 - add lighthouse report after build
 
-## TODO / improvements
+
+ ## Improvements
+
 - Revalidate password control on change of firstName or lastName value
 - Make it look nicer
 
+
+## TODO
+
 - protractor???
+- add few tests
+- add tests to pipeline
 - update readme for tests (choices)
 - update readme for improvements
-- check code 1 more time 
+- check code 1 more time
