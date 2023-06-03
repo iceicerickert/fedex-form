@@ -47,6 +47,7 @@ You can submit a user to `https://demo-api.now.sh/users`.
 - added some buttons with presets from some prominent fedex people (do you know them all?)
 - responsive design
 - default stuff: blocking submit on request, some visual (spinner), resetting form, error handling etc
+- precommit lint
 
 
 ## TODO / improvements
