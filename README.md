@@ -24,9 +24,12 @@ Visit here: [https://fedex-form.web.app/](https://fedex-form.web.app/).
 1. run `npm start` for starting dev server
 
 
-## Test
+## QA
 
-1. todo
+1. todo test unit
+1. todo test e2e
+1. You can find the lighthouse report after deployment as artifact on the summary
+1. You can find security alerts on security tab in github
 
 
 ## Build
@@ -68,7 +71,6 @@ Visit here: [https://fedex-form.web.app/](https://fedex-form.web.app/).
 - Make it look nicer
 
 - protractor???
-- lighthouse
 - sonarqube
 - update readme for tests (choices)
 - update readme for deployment (choices)
