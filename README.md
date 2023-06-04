@@ -46,6 +46,12 @@ Visit here: [https://fedex-form.web.app/](https://fedex-form.web.app/).
 1. Push to `develop`
 1. [GH action](https://github.com/iceicerickert/fedex-form/actions/workflows/firebase-hosting-merge.yml) will deploy to Firebase
 
+
+## CI/CD
+
+1. see `.github/workflows` folder
+
+
 ## Choices
 
 - All english of course
@@ -80,8 +86,3 @@ Visit here: [https://fedex-form.web.app/](https://fedex-form.web.app/).
 - Make it look nicer
 - Better test coverage
 - etc
-
-
-## TODO
-
-- check code 1 more time
