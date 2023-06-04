@@ -16,12 +16,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: npm ci && npm run test -- --no-watch --no-progress
+      - run: npm ci && npm run test:ci
   test_e2e:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: npm ci && npm run e2e
+      - run: npm ci && npm run e2e:ci
   build_and_deploy:
     runs-on: ubuntu-latest
     needs: [lint, test_component, test_e2e]
