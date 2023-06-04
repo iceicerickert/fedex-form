@@ -9,6 +9,9 @@
 ![Safari](https://img.shields.io/badge/Safari-000000?style=for-the-badge&logo=Safari&logoColor=white)
 ![Firefox](https://img.shields.io/badge/Firefox-FF7139?style=for-the-badge&logo=Firefox-Browser&logoColor=white)
 
+[![Deploy to Firebase Hosting on merge](https://github.com/iceicerickert/fedex-form/actions/workflows/firebase-hosting-merge.yml/badge.svg?branch=develop)](https://github.com/iceicerickert/fedex-form/actions/workflows/firebase-hosting-merge.yml)
+[![CodeQL](https://github.com/iceicerickert/fedex-form/actions/workflows/codeql.yml/badge.svg?branch=develop)](https://github.com/iceicerickert/fedex-form/actions/workflows/codeql.yml)
+
 # fedex-form
 
 This is a form for assessment purposes.  
@@ -26,8 +29,8 @@ Visit here: [https://fedex-form.web.app/](https://fedex-form.web.app/).
 
 ## QA
 
-1. todo test unit
-1. todo test e2e
+1. for component test: run `npm run test`
+1. for e2e test: run `npm run e2e`
 1. You can find the lighthouse report after deployment as artifact on the summary
 1. You can find security alerts on security tab in github
 
@@ -65,19 +68,20 @@ Visit here: [https://fedex-form.web.app/](https://fedex-form.web.app/).
 - firebase hosting for serving
 - github action for deploying
 - add lighthouse report after build
+- removed protractor
+- used cypress
+- add few tests
+- add tests to pipeline
 
 
  ## Improvements
 
 - Revalidate password control on change of firstName or lastName value
 - Make it look nicer
+- Better test coverage
+- etc
 
 
 ## TODO
 
-- protractor???
-- add few tests
-- add tests to pipeline
-- update readme for tests (choices)
-- update readme for improvements
 - check code 1 more time
