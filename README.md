@@ -79,6 +79,7 @@ Visit here: [https://fedex-form.web.app/](https://fedex-form.web.app/).
 - used cypress
 - add few tests
 - add tests to pipeline
+- added firebase analytics
 
 
  ## Improvements

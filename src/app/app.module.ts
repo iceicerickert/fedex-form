@@ -9,6 +9,10 @@ import { UserFormComponent } from './user-form/user-form.component';
 
 import { ShouldNotContainValidatorDirective } from './shared/shoud-not-contain.directive';
 import { ServiceWorkerModule } from '@angular/service-worker';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAnalytics,getAnalytics,ScreenTrackingService,UserTrackingService } from '@angular/fire/analytics';
+import { provideAuth, getAuth } from '@angular/fire/auth';
 
 @NgModule({
   imports: [
@@ -21,14 +25,20 @@ import { ServiceWorkerModule } from '@angular/service-worker';
       // Register the ServiceWorker as soon as the application is stable
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000'
-    })
+    }),
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth()),
+    provideAnalytics(() => getAnalytics())
   ],
   declarations: [
     AppComponent,
     UserFormComponent,
     ShouldNotContainValidatorDirective,
   ],
-  providers: [],
+  providers: [
+    ScreenTrackingService,
+    UserTrackingService
+  ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }
